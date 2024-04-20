@@ -1,13 +1,121 @@
+/* Reset default margin and set font family for better consistency */
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+		'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+		'Droid Sans', 'Helvetica Neue', sans-serif;
+	-webkit-font-smoothing: antialiased; /* Smoothing font on WebKit browsers */
+	-moz-osx-font-smoothing: grayscale; /* Smoothing font on macOS Firefox */
 }
 
+/* Set font family for code elements */
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas,
+		'Courier New', monospace;
+}
+
+/* Styling for the header section */
+.header {
+	display: flex; /* Flexbox layout */
+	align-items: center; /* Vertically center items */
+	justify-content: space-between; /* Distribute space between items */
+}
+
+/* Dark mode styling */
+.dark-mode {
+	background-color: black; /* Dark background */
+}
+
+.dark-mode h1 {
+	color: white; /* White text for headings in dark mode */
+}
+
+/* Container styling */
+.container {
+	max-width: 960px; /* Maximum width */
+	margin-right: auto; /* Auto margin for centering */
+	margin-left: auto; /* Auto margin for centering */
+	padding-right: 15px; /* Right padding */
+	padding-left: 15px; /* Left padding */
+	min-height: 100vh; /* Minimum height of viewport */
+}
+
+/* Styling for the list of notes */
+.notes-list {
+	display: grid; /* Grid layout */
+	grid-gap: 1rem; /* Gap between grid items */
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid columns */
+}
+
+/* Styling for new notes */
+.note.new {
+	background-color: #67d7cc; /* Example color */
+}
+
+/* Textarea styling */
+textarea {
+	border: none; /* Remove border */
+	resize: none; /* Disable textarea resize */
+	background-color: #67d7cc; /* Example color */
+}
+
+textarea:focus {
+	outline: none; /* Remove outline on focus */
+}
+
+/* Styling for save button */
+.save {
+	background-color: #e1e1e1; /* Button background color */
+	border: none; /* Remove border */
+	border-radius: 15px; /* Rounded corners */
+	padding: 5px 10px; /* Padding */
+}
+
+.save:hover {
+	background-color: #ededed; /* Button background color on hover */
+	cursor: pointer; /* Cursor style */
+}
+
+/* Styling for individual notes */
+.note {
+	background-color: #fef68a; /* Note background color */
+	border-radius: 10px; /* Rounded corners */
+	padding: 1rem; /* Padding */
+	min-height: 170px; /* Minimum height */
+	display: flex; /* Flexbox layout */
+	flex-direction: column; /* Column direction */
+	justify-content: space-between; /* Distribute space between items */
+	white-space: pre-wrap; /* Wrap text */
+}
+
+/* Styling for note footer */
+.note-footer {
+	display: flex; /* Flexbox layout */
+	align-items: center; /* Vertically center items */
+	justify-content: space-between; /* Distribute space between items */
+}
+
+/* Styling for delete icon */
+.delete-icon {
+	cursor: pointer; /* Cursor style */
+}
+
+/* Styling for search bar */
+.search {
+	display: flex; /* Flexbox layout */
+	align-items: center; /* Vertically center items */
+	background-color: rgb(233, 233, 233); /* Search bar background color */
+	border-radius: 10px; /* Rounded corners */
+	padding: 5px; /* Padding */
+	margin-bottom: 1.5em; /* Bottom margin */
+}
+
+.search input {
+	border: none; /* Remove border */
+	background-color: rgb(233, 233, 233); /* Input background color */
+	width: 100%; /* Full width */
+}
+
+.search input:focus {
+	outline: none; /* Remove outline on focus */
 }
