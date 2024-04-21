@@ -1,4 +1,4 @@
-Certainly! Here's an explanatory README file for your React notes application:
+
 
 ---
 
@@ -7,6 +7,23 @@ Certainly! Here's an explanatory README file for your React notes application:
 Welcome to the React Notes App! This application is built using React, a popular JavaScript library for building user interfaces. The React Notes App allows users to manage their notes effectively by providing features such as creating, viewing, searching, and deleting notes.
 
 ## Features
+Add Notes: Users can add new notes by typing in the text area and clicking the "Save" button.
+Delete Notes: Each note has a delete button that allows users to remove unwanted notes.
+Search Notes: Users can search for specific notes by typing keywords into the search bar.
+Dark Mode: Toggle between light and dark mode for better readability.
+Image Upload: Users can upload images to their notes by selecting files from their device.
+Video Embedding: Users can embed videos in their notes by pasting video links into the designated input field.
+
+
+## Usage
+
+Type your note text in the text area provided.
+Optionally, upload an image by clicking the "Add Image" button and selecting a file from your device.
+Optionally, embed a video by pasting a video link into the "Add Video Link" input field.
+Click the "Save" button to add the note.
+Use the search bar to find specific notes by typing keywords.
+To delete a note, click the delete icon next to the note.
+
 
 ### Create Notes
 

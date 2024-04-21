@@ -4,6 +4,7 @@ import NotesList from './components/NotesList'; // Importing NotesList component
 import Search from './components/Search'; // Importing Search component
 import Header from './components/Header'; // Importing Header component
 
+
 const App = () => {
 	// State for storing notes
 	const data = new Date();

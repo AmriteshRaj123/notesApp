@@ -1,11 +1,17 @@
 import { MdDeleteForever } from 'react-icons/md';
 import { useState } from 'react';
+import ReactPlayer from 'react-player'
 
 const Note = ({ id, text, date, handleDeleteNote }) => {
-	const [file, setFile] = useState();
+	const [image, setImage] = useState();
+	const [video, setvideo] = useState();
     function handleChange(e) {
+        // console.log(e.target.files);
+        setImage(URL.createObjectURL(e.target.files[0]));
+    }
+    function handleChanges(e) {
         console.log(e.target.files);
-        setFile(URL.createObjectURL(e.target.files[0]));
+        setvideo(e.target.value);
     }
 	return (
 		<div className='note'>
@@ -17,10 +23,20 @@ const Note = ({ id, text, date, handleDeleteNote }) => {
 					className='delete-icon'
 					size='1.3em'
 				/>
-				<h2>Add Image:</h2>
+				</div>
+			<div>
+			<div>Add Image:</div>
             <input type="file" onChange={handleChange} />
-			{file!=null && <img src={file} alt='hello' />}
+			{image!=null && <img className='inpimage' width="280px" height="180px" src={image} alt='hello' />}
 			</div>
+			<div>
+			<div>Add video Link:</div>
+            <input type="url" onChange={handleChanges} />
+			{video!=null && <ReactPlayer url={video} width="280px" height="220px"/>}
+			</div>
+			
+
+
 		</div>
 	);
 };
