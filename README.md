@@ -88,4 +88,11 @@ The `NotesList` component is responsible for rendering the list of notes and the
 - **React**: JavaScript library for building user interfaces.
 - **nanoid**: Library for generating unique IDs.
 - **CSS**: Styling for the application layout and components.
+- 
+- - <img width="972" alt="Screenshot 2024-04-21 at 10 44 53 PM" src="https://github.com/AmriteshRaj123/notesApp/assets/153702759/1284f725-35fa-46ec-a644-31ceee927a99">
+
+- ![image](https://github.com/AmriteshRaj123/notesApp/assets/153702759/c662af0c-de4b-40d6-9922-228ba1ee986a)
+
+
+
 
